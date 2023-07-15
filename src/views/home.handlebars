@@ -1,0 +1,23 @@
+<h2>Products</h2>
+<a href="/realtimeproducts">Create products</a>
+
+<hr>
+
+<table border="1">
+    <thead>
+        <tr>
+            <td>ID</td>
+            <td>Description</td>
+            <td>Price</td>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each products}}
+        <tr>
+            <td>{{this.id}}</td>
+            <td>{{this.description}}</td>
+            <td>{{this.price}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
